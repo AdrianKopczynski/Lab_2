@@ -1,4 +1,3 @@
-﻿#include "pch.h"
 #include <iostream>
 using namespace std;
 
@@ -50,16 +49,14 @@ int main() {
 		cout << endl;
 		r += 1;
 	}
-	cout << endl << "Trojkat prostokatny rownoramienny z katem prosty w lewym dolnym rogu: " << endl;
+	cout << endl << "Trojkat prostokatny rownoramienny z katem prosty w prawym gornym rogu: " << endl;
 	int p = a;
-	int y = 0;
+	int y = -1;
 	for (int i = 0; i < a; i++) {
+		for (int t = 0;t<=y;t++){
+			cout << " ";
+		}
 		for (int n = 0; n < p; n++) {
-			if(y>0){
-				for (int e = 0; e < y; e++) {
-					cout << " ";
-				}
-			}
 			cout << "*";
 		}
 		cout << endl;
